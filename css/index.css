@@ -10,15 +10,11 @@ body{
        text-align:center;
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        flex-wrap: wrap;
-       height:100vh;
+       height:90vh;
        margin: 0 auto;
-       width: 80%;
+       width: 99%;
        justify-content: center;
     }
-
-
-
-
 
 header{
     position: fixed;
@@ -192,7 +188,7 @@ nav ul :hover{
 
 
 
-@media (mmix-width: 700px){
+@media (max-width: 767px){
     nav ul {
         background-color: lightpink;
         font-size: 2rem;
@@ -200,7 +196,7 @@ nav ul :hover{
 
 
 }
-@media (mmax-width: 700px){
+@media ( (min-width: 768px) and  (max-width: 990px)){
     #productos{
 
  background-color: lightpink;
@@ -208,7 +204,7 @@ nav ul :hover{
 
 }
 }
-@media (max-width: 800px){
+@media (max-width: 991 px){
 
     #productos{
         width: 100%;
@@ -392,7 +388,7 @@ aside {
    display: flex;
     width: 20%;
     position:absolute;
-    top: 200px;
+    top: 150px;
     left: 80%;
     right: 0px;
     max-lines: 4;
@@ -414,7 +410,7 @@ footer {
 
 footer{
     background-color: navy;
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 13px  0px;
 }
