@@ -2,6 +2,49 @@ body{
     margin: 0 auto;
    font-size: 1rem;
 }
+,resolucion{
+
+    width: 99%
+    text-align:center;
+
+}
+/*Celular*/
+
+@media (max-width: 767px){
+ .desktop{
+    display: none;
+ }
+ .tablet{
+    display: none;
+ }
+ }
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 990px){
+
+.desktop{
+   display: none;
+ }
+  .celular{
+    display: none;
+     }
+}
+/*desktop*/
+@media (min-width: 991px){
+
+.tablet{
+   display: none;
+ }
+
+ .celular{
+    display: none;
+ }
+ .celular{
+
+     }
+
+}
+
+
 #contenedor > *{
     float: left;
 }
@@ -10,7 +53,7 @@ body{
        text-align:center;
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        flex-wrap: wrap;
-       height:120vh;
+       height:110vh;
        margin: 0 auto;
        width: 80%;
        justify-content: center;
@@ -104,7 +147,7 @@ h1{
     margin-top: 0;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(35deg, #feffff 0%,#ddf1f9 41%,#d6dfe2 100%);
+    background: linear-gradient(35deg, #4c0ee8 0%,#ddf1f9 41%,#d6dfe2 100%);
 }
 
 nav{
@@ -151,36 +194,33 @@ nav{
  }
 
 nav ul li a{
-
-    background-color: rgb(240, 230, 216);
+background-color: rgb(240, 230, 216);
     color: rgb(222, 123, 47);
-    padding: 10% ;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
-
-    font-size: 2rem;
-
-    box-shadow: 2px 2px 18px rgb(46, 52, 46),-2px -2px 18px rgba(62, 59, 59,0.5) inset;
+    font-size: 1.4rem;
+    box-shadow: rgb(46, 52, 46) 2px 2px 10px, rgba(62, 59, 59, 0.5) -2px -2px 18px inset;
+    padding: 10%;
+    text-decoration: none;
 }
 
 nav ul :hover{
-    /*
-        background-color: rgb(236, 176, 176);
+  /*
+          background-color: rgb(236, 176, 176);
 
-        Alineación horizontal
+          Alineación horizontal
 
-       transform: rotate(10deg) translate(10px,70px) skew(15deg);
+         transform: rotate(10deg) translate(10px,70px) skew(15deg);
 
-       /*
-           Punto de origen de la transformación.
-       transform-origin: center center;
+         /*
+             Punto de origen de la transformación.
+         transform-origin: center center;
 
-       */
-       border-radius: 5px;
-       background-color: coral;
-       transform: scale(0.95);
-       box-shadow: 0 0 4px silver, 0 0 4px rgb(197, 188, 188) inset;
+         */
+         border-radius: 5px;
+         background-color: coral;
+         transform: scale(0.95);
+         box-shadow: 0 0 4px silver, 0 0 4px rgb(197, 188, 188) inset;
 
 
 
@@ -188,10 +228,7 @@ nav ul :hover{
 
 
 
-
-
-
-
+/*
 @media (mix-width: 700px){
     nav ul {
         background-color: lightpink;
@@ -232,7 +269,7 @@ nav ul :hover{
 
 
     }
-}
+} */
 /*
     Creamos un div para contener a los artículos y ponerlos de a 2 porque tienen ancho de 50%
 */
