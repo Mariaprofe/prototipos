@@ -2,14 +2,6 @@ body{
     margin: 0 auto;
    font-size: 1rem;
 }
-.resolucion{
-
-    width: 99%
-    text-align:center;
-
-}
-
-
 #contenedor > *{
     float: left;
 }
@@ -18,7 +10,7 @@ body{
        text-align:center;
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        flex-wrap: wrap;
-       height:110vh;
+       height:100vh;
        margin: 0 auto;
        width: 80%;
        justify-content: center;
@@ -52,7 +44,7 @@ header{
 
 #config{
     position: fixed;
-    right: 10px;
+    right: 20px;
 
     top: 6px;
     font-size: 1.55rem;
@@ -71,7 +63,7 @@ header{
 }
 #redessociales ul {
 
-    padding: 10% 10% ;
+    padding: 10% 20% ;
 
     top: 100%;
 
@@ -87,14 +79,14 @@ header{
 
 }
 #redessociales ul li a i {
-    font-size: 2rem;
+    font-size: 13rem;
     text-shadow: 0 0 3px rgb(213, 196, 196);
     color: white;
     font-size: 2.55rem;
 
 }
 #redessociales ul li a  {
-    padding:20% 90px;
+    padding:4% 100px;
 }
 h1{
 
@@ -107,12 +99,12 @@ h1{
         X Y Blur color
         Puedo separar niveles de sombra con ,
     */
-    text-shadow: 0 0 10px rgb(213, 196, 196);
+    text-shadow: 0 0 5px rgb(213, 196, 196);
     color: white;
     margin-top: 0;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(35deg, #4c0ee8 0%,#ddf1f9 41%,#d6dfe2 100%);
+    background: linear-gradient(35deg, #feffff 0%,#ddf1f9 41%,#d6dfe2 100%);
 }
 
 nav{
@@ -159,99 +151,45 @@ nav{
  }
 
 nav ul li a{
-background-color: rgb(240, 230, 216);
+
+    background-color: rgb(240, 230, 216);
     color: rgb(222, 123, 47);
+    padding: 10% ;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
+
     font-size: 1.4rem;
-    box-shadow: rgb(46, 52, 46) 2px 2px 10px, rgba(62, 59, 59, 0.5) -2px -2px 18px inset;
-    padding: 10%;
-    text-decoration: none;
+
+    box-shadow: 2px 2px 10px rgb(46, 52, 46),-2px -2px 18px rgba(62, 59, 59,0.5) inset;
 }
 
 nav ul :hover{
-  /*
-          background-color: rgb(236, 176, 176);
-
-          Alineación horizontal
-
-         transform: rotate(10deg) translate(10px,70px) skew(15deg);
-
-         /*
-             Punto de origen de la transformación.
-         transform-origin: center center;
-
-         */
-         border-radius: 5px;
-         background-color: coral;
-         transform: scale(0.95);
-         box-shadow: 0 0 4px silver, 0 0 4px rgb(197, 188, 188) inset;
-
-
-
-}
-
-
-/*
-
-@media (mix-width: 700px){
-    nav ul {
-       background-color: lightpink;
-        font-size: 2rem;
-    }
-
-
-}
-@media (max-width: 700px){
-    #productos{
-
- background-color: lightpink;
-        font-size: 2rem;
-
-}
-}
-@media (max-width: 800px){
-
-    #productos{
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-
-        }
-}
-
-
-@media (max-width: 800px){
-    nav ul {
-
-        width: 20%;
-        padding: 5px;
-        box-sizing: border-box;
-        margin-top: 120%;
-        margin-left: 200%;
-        right: 10%;
-        display: flex;
-
-
-    }
-} */
-/*
-    Creamos un div para contener a los artículos y ponerlos de a 2 porque tienen ancho de 50%
-*/
-
-@keyframes animar {
     /*
-        Cambiamos:
-        ancho
-        alto
-        opacidad (de totalmente opaco a transparente) con opacity
-        y color de fondo
-    */
+        background-color: rgb(236, 176, 176);
 
-    from{width: 70px;height: 70px;opacity:1;}
-    to {width: 970x;height: 600;opacity:1;}
+        Alineación horizontal
+
+       transform: rotate(10deg) translate(10px,70px) skew(15deg);
+
+       /*
+           Punto de origen de la transformación.
+       transform-origin: center center;
+
+       */
+       border-radius: 5px;
+       background-color: coral;
+       transform: scale(0.95);
+       box-shadow: 0 0 4px silver, 0 0 4px rgb(197, 188, 188) inset;
+
+
 
 }
+
+
+
+
+
 #productos{
 
     margin-top:10% 10%;
@@ -389,7 +327,8 @@ text-align:center;
  align-items: center;
 }
 aside {
-display: flex;
+
+   display: flex;
     width: 20%;
     position:absolute;
     top: 200px;
@@ -414,7 +353,7 @@ footer {
 
 footer{
     background-color: navy;
-    width:100%;
+    width: 100%;
     text-align: center;
     padding: 13px  0px;
 }
@@ -424,39 +363,64 @@ footer small{
     box-shadow: 2px 2px 10px rgb(109, 57, 57);
 
 }
-/*Celular*/
 
-@media (max-width: 767px){
- .desktop{
-    display: none;
- }
- .tablet{
-    display: none;
- }
- }
-/* Tablet*/
-@media (min-width: 768px) and (max-width: 990px){
 
-.desktop{
-   display: none;
- }
-  .celular{
-    display: none;
-     }
-}
-/*desktop*/
-@media (min-width: 991px){
 
-.tablet{
-   display: none;
- }
+@media (min-width: 700px){
+    nav ul {
+        background-color: lightpink;
+        font-size: 2rem;
+    }
 
- .celular{
-    display: none;
- }
- .celular{
-
-     }
 
 }
+@media (max-width: 700px){
+    #productos{
 
+ background-color: lightpink;
+        font-size: 2rem;
+
+}
+}
+@media (max-width: 800px){
+
+    #productos{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+        }
+}
+
+
+@media (max-width: 800px){
+    nav ul {
+
+        width: 20%;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-top: 120%;
+        margin-left: 200%;
+        right: 10%;
+        display: flex;
+
+
+    }
+}
+/*
+    Creamos un div para contener a los artículos y ponerlos de a 2 porque tienen ancho de 50%
+*/
+
+@keyframes animar {
+    /*
+        Cambiamos:
+        ancho
+        alto
+        opacidad (de totalmente opaco a transparente) con opacity
+        y color de fondo
+    */
+
+    from{width: 70px;height: 70px;opacity:1;}
+    to {width: 970x;height: 600;opacity:1;}
+
+}
